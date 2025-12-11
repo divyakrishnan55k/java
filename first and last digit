@@ -1,0 +1,11 @@
+import java.util.Scanner;
+public class Main{
+        public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        int num=sc.nextInt();
+        int firstdigit=num/10;
+        int lastdigit=num/100;
+        int Sum=firstdigit+lastdigit;
+        System.out.println(Sum=firstdigit+lastdigit);
+    }
+}
