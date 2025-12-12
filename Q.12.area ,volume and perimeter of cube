@@ -1,0 +1,13 @@
+import java.util.Scanner;
+public class Main{
+    public static void main(String[] args){
+    Scanner sc=new Scanner(System.in);
+    double a=sc.nextDouble();
+    double area=6*Math.pow(a,2);
+    double volume=a*Math.pow(a,3);
+    double perimeter=12*a;
+    System.out.println(area);
+    System.out.println(volume);
+    System.out.println(perimeter);
+    }
+}
