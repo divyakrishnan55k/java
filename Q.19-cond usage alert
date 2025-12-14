@@ -1,0 +1,21 @@
+import java.util.Scanner;
+public class Main{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        int usagealert=50;
+        if(usagealert<20){
+            System.out.println("low data");
+        }
+        else if(usagealert<100){
+            System.out.println("half consumed");
+        }
+        else if(usagealert==100){
+            System.out.println("data over");
+        }
+        else{
+            System.out.println("invalid data usage");
+        }
+        }
+        }
+        
+        
