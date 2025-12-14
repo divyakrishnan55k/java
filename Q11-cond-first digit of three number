@@ -3,7 +3,7 @@ public class Main{
     public static void main(String[] args){
         Scanner sc=new Scanner(System.in);
         int n=sc.nextInt();
-        if(n>=100 && n<=999){
+        if(n<100 && n>999){
             int firstdigit=n/100;
         if(firstdigit%2==0){
             System.out.println("even");
