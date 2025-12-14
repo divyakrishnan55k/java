@@ -1,0 +1,14 @@
+import java.util.Scanner;
+public class Main{
+    public static void main(String[] args){
+        Scanner sc= new Scanner(System.in);
+        int mobilenumber=sc.nextInt();
+        if(mobilenumber==10){
+            System.out.println("valid number");
+        }
+        else{
+            System.out.println("invalid number");
+        }
+        }
+}
+        
