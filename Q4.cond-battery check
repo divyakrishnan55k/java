@@ -1,0 +1,19 @@
+import java.util.Scanner;
+public class Main{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        int battery=sc.nextInt();
+        if(battery<20){
+            System.out.println("low battery");
+        }
+        else if(battery>=20){
+            System.out.println("50% consumed");
+        }
+        else if(battery==100){
+            System.out.println("battery full");
+        }
+        else{
+            System.out.println("invalid battery");
+        }
+        }
+        }
