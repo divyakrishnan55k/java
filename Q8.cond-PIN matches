@@ -1,0 +1,17 @@
+import java.util.Scanner;
+public class Main{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        int enteredPin=sc.nextInt();
+        int storedPin=1234;
+        if(enteredPin==storedPin){
+            System.out.println("Pin Matched.withdrawal allowed.");
+        }
+        
+        else{
+            System.out.println("Incorrect PIN.access denied.");
+        }
+        }
+}
+        
+        
