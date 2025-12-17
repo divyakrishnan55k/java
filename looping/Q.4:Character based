@@ -1,0 +1,22 @@
+import java.util.Scanner;
+public class Main{
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter the first alphabet: ");
+        char start = sc.next().charAt(0); 
+
+        System.out.print("Enter the second alphabet: ");
+        char end = sc.next().charAt(0); 
+
+        System.out.println("Alphabets between " + start + " and " + end + ":");
+        if (start > end) {
+            char temp = start;
+            start = end;
+            end = temp;
+        }
+        for (char ch = start; ch <= end; ch++) {
+            System.out.print(ch + " ");
+        }
+        sc.close();
+    }
+}
