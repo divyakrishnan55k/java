@@ -1,0 +1,22 @@
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int num = sc.nextInt();
+        int squareSum = 0;
+        int cubeSum = 0;
+        if (num == 0) {
+            System.out.println("Sum of squares = 0");
+            System.out.println("Sum of cubes = 0");
+            return;
+        }
+        while (num > 0) {
+            int digit = num % 10;
+            squareSum = squareSum + (digit * digit);
+            cubeSum = cubeSum + (digit * digit * digit);
+            num = num / 10;
+        }
+        System.out.println("Sum of squares of digits = " + squareSum);
+        System.out.println("Sum of cubes of digits = " + cubeSum);
+    }
+}
