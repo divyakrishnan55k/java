@@ -1,0 +1,29 @@
+mport java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int num = sc.nextInt();
+        int evenSum = 0;
+        int oddSum = 0;
+        if (num == 0) {
+            System.out.println("Even Sum = 0");
+            System.out.println("Odd Sum = 0");
+            System.out.println("Difference = 0");
+            return;
+        }
+        while (num > 0) {
+            int digit = num % 10;
+
+            if (digit % 2 == 0)
+                evenSum = evenSum + digit;
+            else
+                oddSum = oddSum + digit;
+                num = num / 10;
+        }
+
+        int difference = evenSum - oddSum;
+        System.out.println(evenSum);
+        System.out.println(oddSum);
+        System.out.println(difference);
+    }
+}
