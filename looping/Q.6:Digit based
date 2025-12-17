@@ -1,0 +1,23 @@
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+     Scanner sc = new Scanner(System.in);
+        int num = sc.nextInt();
+        boolean isDescending = true;
+        int prevDigit = num % 10;
+        num = num / 10;
+        while (num > 0) {
+            int currDigit = num % 10;
+             if (currDigit < prevDigit) {
+                isDescending = false;
+                break;
+            }
+            prevDigit = currDigit;
+            num = num / 10;
+        }
+if (isDescending)
+            System.out.println("Digits are in descending order");
+        else
+            System.out.println("Digits are not in descending order");
+    }
+}
