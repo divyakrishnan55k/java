@@ -1,0 +1,25 @@
+import java.util.Scanner;
+public class Main{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        int num=sc.nextInt();
+        int digit=sc.nextInt();
+        boolean found=false;
+        int temp=num;
+        while(temp>0){
+            int lastdigit=temp%10;
+            if(lastdigit==digit){
+                found=true;
+                break;
+            }
+                temp=temp/10;
+        }
+        if(found){
+            System.out.println("digit is found");
+        }
+        else{
+            System.out.println("digit is not found");
+        }
+    }
+}
+        
