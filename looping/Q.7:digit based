@@ -1,0 +1,21 @@
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+       Scanner sc = new Scanner(System.in);
+        int num = sc.nextInt();
+        int temp = num;
+        int last = temp % 10;
+        int first = temp;
+        int count = 0;
+        while (first >= 10) {
+            first = first / 10;
+            count++;
+            }
+            int power = (int) Math.pow(10, count);
+        int middle = (num % power) / 10;
+        int swappedNumber = last * power + middle* 10 + first;
+        System.out.println(swappedNumber);
+    }
+}
+    
+
